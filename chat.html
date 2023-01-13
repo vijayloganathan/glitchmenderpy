@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="chat.css">
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="chatcontainer">
+        <div class="navbar">
+            <table style="width:100%">
+                <tr>
+                    <th style="width: 50%;">
+                        <img src="chatbotlogo.png" alt="" id="logo">
+                    </th>
+                    <th  style="width: 10%;" id="nav">
+                        <a href="#" id="bot">Chatbot</a>
+                    </th>
+                    <th  style="width: 20%;" id="nav">
+                        <a href="#" id="complier">Python Compiler</a>
+                    </th>
+                    <th  style="width: 10%;" id="nav">
+                        <a href="#" id="logout">Logout</a>
+                    </th>
+                </tr>
+            </table>    
+        </div>
+        <div class="maincontent">
+            <div class="chatbot">
+                <div class="image">
+                    <img src="chat-removebg-preview.png" alt="" id="contentimage">
+                </div>
+                <div class="chatbot1">
+                    <div class="chattitle">
+                        <center><h3>CHAT BOT</h3></center><hr>
+                    </div>
+                    <div class="chatinterface" id="chatinterface">
+                    </div>
+                    <hr><div class="chattype">
+                        <table id="typemess">
+                            <tr>
+                                <th id="mess1">
+                                    <input type="text" placeholder=" Enter your text here" id="messtype">
+                                </th>
+                                <th id="mess2">
+                                    <button id="micbtn"> <i class="fa fa-microphone icon" id="mic"></i></button>
+                                </th>
+                                <th id="mess3">
+                                    <button type="submit" id="sendbtn"><i class="fa fa-send icon" id="mic"></i></button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="coimpler" style="display: none;">
+               <div class="editor" id="editor"></div>
+            
+                    <div class="in">
+                        <div class="al">
+                            <h3 style="float:left">ENTER INPUT  </h3>
+                            <button class="run" id="run" style="float:right">Run</button> 
+                        </div>
+                <textarea name="input" id="input"></textarea>
+                    </div>
+                    <div class="out">
+                       <center><h3>OUT OF THE PROGRAM</h3></center> 
+                        <div class="code_output" id="code_output"></div>
+                    </div>
+                
+                
+                
+            
+               
+            </div>
+        </div>
+
+    </div>
+    <script src="script/library/ace.js"></script>
+    <script src="script/library/theme-cobalt.js"></script>
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Most Relevant Match</title>
+</head>
+<body>
+  <form>
+    <label for="search">Search:</label><br>
+    <input type="text" id="search" name="search"><br>
+  </form> 
+  <br>
+  <div id="results"></div>
+  <script>
+    const strings = ['apple', 'banana', 'orange', 'mango', 'grapes'];
+
+    document.querySelector('form').addEventListener('submit', event => {
+      event.preventDefault();
+      const searchTerm = document.querySelector('#search').value;
+      const matches = strings.filter(string => string.includes(searchTerm));
+      const sortedMatches = matches.sort((a, b) => {
+        const aIndex = a.indexOf(searchTerm);
+        const bIndex = b.indexOf(searchTerm);
+        return aIndex - bIndex;
+      });
+      document.querySelector('#results').innerHTML = `
+        <p>Most relevant match: ${sortedMatches[0]}</p>
+      `;
+    });
+  </script>
+</body>
+</html>

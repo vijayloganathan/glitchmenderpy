@@ -1,0 +1,278 @@
+body{
+    background-image: radial-gradient(#ff8a00, #e52e71);
+    background-image: radial-gradient(circle at right, #ff8a00, rgb(122, 32, 145), #e52e71);
+    height: screen;
+    width: 100%; 
+    margin: 0%;
+    padding: 0%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+.chatcontainer
+{
+    width:100%;
+    height:100%;
+    padding: 0.5%;
+}
+
+.navbar 
+{
+    height:10%;
+    background-color: white;
+    width:80%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+#logo
+{
+    height: 60px;
+    float:left;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.navbar a
+{
+    padding: 5px;
+}
+
+#nav :hover{
+    background-color: #595a5c;
+    color: white;
+    border-radius: 5px; 
+}
+
+#contentimage
+{
+    padding-left: 5%;
+}
+
+.maincontent
+{
+    height:85%;
+    padding: 1%;
+}
+
+.image{
+float: left;
+}
+
+.chatbot1
+{
+    background-color: rgb(255, 255, 255,0.2);
+    width:420px;
+    height: 480px;
+    float:right;
+    margin-right: 15%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2.9%;
+
+}
+
+.chattitle
+{
+    padding: 10px;
+}
+
+.chattitle h3
+{
+    padding-bottom: 10px;
+    color: white;
+    
+}
+
+.chatinterface
+{
+    height: 310px;
+    width:360px;
+    background-color:transparent;
+    margin-left: 5%;
+    border-radius: 10px;
+    overflow-y: scroll;
+   
+}
+
+.chatinterface::-webkit-scrollbar {
+    display: none;
+}
+
+
+.chatinterface {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+
+
+#messtype
+{
+    height: 30px;
+    width: 100%;
+    margin-left: 2%;
+    border-radius: 5px;
+    border:none;  
+    padding-left: 10px;  
+}
+
+#micbtn
+{
+    background-color: transparent;
+    border: none;
+}
+#mic
+{
+    color: white;
+    font-size: 25px;    
+    margin-left: 100%;
+}
+
+#sendbtn
+{
+    background-color: transparent;
+    color: #f3f3f3;
+    border: none;
+    
+}
+
+#mess1
+{
+    width: 79.5%;
+}
+#mess2
+{
+    width:10%;
+}
+#mess3
+{
+    width:30%;
+}
+
+
+
+.chatinterface p
+{
+    float:right;
+    margin-left: 20%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 13px;
+}
+
+.chatinterface h4
+{
+    float: left;
+    margin-right: 20%;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4px;
+    border-radius: 5px;
+    font-family: verdana;
+    font-size: 13px;
+
+}
+
+#compiler{
+    position: static;
+   margin-top: 1%;
+   width: 80%;
+   height:500px;
+   margin-left: 10%;
+   border-radius: 10px;
+   margin-bottom: 3%;
+    
+}
+
+
+
+
+
+
+
+.editor
+{
+    height: 70vh;
+    width:42%;
+    float:left;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 5%;
+
+}
+
+#input
+{
+    margin-left: 5%;
+    min-height: 100px;
+    padding: 0%;
+    width:40%;
+    background-color: rgb(243, 240, 240,0.2);
+    color:rgb(10, 10, 10);
+    border: none;
+    
+   
+}
+
+.output-header
+{
+    margin: 2rem 10rem; 
+    font-weight: bold;
+}
+
+.code_output
+{
+    background-color: rgb(243, 240, 240,0.2);
+    width:40%;
+    height: 200px;
+    float:right;
+    margin-right: 7.8%;
+    color:rgb(10, 9, 9);
+    
+}
+
+.al h3
+{
+    color:white;
+    float:right;
+    margin-left:5% ;
+   
+}
+
+.al button{
+    margin-right: 10%;
+    margin-top: 1%;
+    background-color: rgb(25, 189, 25);
+    border:none;
+    border-radius: 10px;
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: white;
+    font-size: 15px;
+}
+.out h3
+{
+    color:white;
+    float:right;
+    margin-right:32% ;
+}
+

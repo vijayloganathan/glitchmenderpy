@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <script>
+      function getLevenshteinDistance(a, b) {
+        
+        let distance = [];
+        for(let i = 0; i <= a.length; i++) {
+            distance[i] = [];
+            for(let j = 0; j <= b.length; j++) {
+                distance[i][j] = 0;
+            }
+        }
+        for(let i = 0; i <= a.length; i++) {
+            distance[i][0] = i;
+        }
+        for(let j = 0; j <= b.length; j++) {
+            distance[0][j] = j;
+        }
+        for(let i = 1; i <= a.length; i++) {
+            for(let j = 1; j <= b.length; j++) {
+                if(a[i-1] === b[j-1]) {
+                    distance[i][j] = distance[i-1][j-1];
+                }
+                else {
+                    distance[i][j] = Math.min(distance[i-1][j] + 1, distance[i][j-1] + 1, distance[i-1][j-1] + 1);
+                }
+            }
+        }
+        
+
+        
+        return distance[a.length][b.length];
+       
+    }
+
+    </script>
+  </head>
+
+
+
+  <body>
+
+   
+
+   
+    
+   
+      <label>Sentence 2: <input id="search" type="text" /></label><br>
+      <button onclick="compareSentences()">Compare</button>
+  
+    <p>Distance: <span id="distance"></span></p>
+    
+
+
+
+
+    
+    <script>
+            let strings = ['print("")','print ("")','print()'];
+            console.log(strings)
+            let a=""
+            let sy=""
+            let dis=100
+            function compareSentences() {
+            var len = (strings.length)
+            console.log(len)
+            for(var z=0;z<=len;z++)
+            {   
+            a = strings[z];
+         console.log(a)
+            let b = document.getElementById("search").value;
+            let distance = getLevenshteinDistance(a,b);
+                
+            if(dis>distance)
+            {
+                dis=distance;
+                sy=a;
+            }
+
+            console.log(distance)
+            document.getElementById("distance").innerHTML = sy;
+        }
+        
+        }
+    
+    </script>
+  </body>
+</html>
